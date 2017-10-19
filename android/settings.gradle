@@ -1,0 +1,3 @@
+rootProject.name = 'MyMapp'
+
+include ':app'
