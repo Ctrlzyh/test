@@ -18,10 +18,11 @@ class RNCaptcha extends Component{
     state = {
         reload:false
     }
-    uri = { uri : global.PPZ.host + 'account/common/cc?type=register&time=' + new Date() }
+    host = 'http://atest.paipaizhu.com';
+    uri = { uri : this.host + '/common/cc?type=register&time=' + new Date() }
     
     _onChangeCaptcha = ()=>{
-        this.uri = { uri : global.PPZ.host + 'account/common/cc?type=register&time=' + new Date() };
+        this.uri = { uri : this.host + '/common/cc?type=register&time=' + new Date() };
         this.setState({
             reload:!this.state.reload
         })
