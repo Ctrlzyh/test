@@ -27,6 +27,8 @@ export function login(params,fn) {
         loginStart();
             // 用户登录
         const res =await IApp.login(params,fn);
+        console.log('返回的登录信息------->',res)
+        PPZ.store=res;
         // const result2Data = await result.json();
         dispatch(loginSuccess(res));
     }
