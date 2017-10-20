@@ -39,7 +39,6 @@ global.PPZ.styles = {
 
 global.PPZ.appState = 'start';//app运行状态
 global.PPZ.netInfoState = '';//网络状态
-global.PPZ.UMENG_KEY = (Platform.OS === 'android') ? '5704ba0167e58edb7b00287d' : '5716d173e0f55ac44a0005d4';
 
 global.PPZ.version; //app初始化版本配置
 // version数据结构 {
@@ -66,22 +65,10 @@ global.PPZ.cache = {
 //     canOpenNetModal:false
 // }
 
-// /*************** uat 环境地址   ************/
-// const HTTP_TYPE = 'https://';
-// const HOST = HTTP_TYPE+'auat.paipaizhu.com';
-// /*****************************************/
-
-// /*************** sit 环境地址   ************/
-// const HOST = 'http://atest.paipaizhu.com';
-// /*****************************************/
 
 // /*************** 本地 环境地址   ************/
 const HOST = 'http://127.0.0.1:3000';
-// const HOST = 'http://192.168.1.39:3700';
 // /*****************************************/
 
-// /*************** zl 环境地址   ************/
-// const HOST = 'http://192.168.0.253:3700';
-// const HOST = 'http://192.168.31.85:3700';
-// /*****************************************/
+
 global.PPZ.host = HOST;

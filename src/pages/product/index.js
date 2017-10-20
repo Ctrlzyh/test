@@ -9,6 +9,7 @@ import {
   TouchableNativeFeedback,
   View,
 } from 'react-native';
+import RNCaptcha from '../../util/RNCaptcha.js';
 
 class Product extends Component {
   _Onmotai=()=>{
@@ -33,6 +34,7 @@ class Product extends Component {
       <StatusBar barStyle='dark-content' backgroundColor='#e0e0e0'/>
       <View style={styles.group}>
       <Text style={{fontSize:20}} onPress={this._Onmotai}>motai</Text>
+      <RNCaptcha/>
       </View>
     </ScrollView>
   }
